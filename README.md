@@ -123,6 +123,7 @@ exemplo:
         RewriteRule ^ index.php [QSA,L]
 	</Directory>
 </VirtualHost>
+
 ```
 
 3. Configure a conexão com o banco na classe Sql.
@@ -130,8 +131,10 @@ exemplo:
 4. Abra o terminal na pasta raiz do projeto e execute o comando:
 
    ```bash
+
    composer init
    composer update
+
    ```
 
 # E-commerce Project
