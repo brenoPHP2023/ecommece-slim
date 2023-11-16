@@ -107,6 +107,7 @@ exemplo:
 exemplo:
 
     ```bash
+    
     <VirtualHost *:80>
     ServerAdmin seuemail@seuemail.com.br
     DocumentRoot "C:\xampp74\htdocs\ecommerce"
@@ -123,6 +124,7 @@ exemplo:
         RewriteRule ^ index.php [QSA,L]
 	</Directory>
 </VirtualHost>
+
 ```
 
 3. Configure a conexão com o banco na classe Sql.
