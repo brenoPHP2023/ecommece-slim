@@ -97,6 +97,7 @@ Para executar o projeto localmente, siga estas etapas:
 2.1 - Vá em C:\Windows\System32\drivers\etc e modifique o host para o endereço do seu projeto
 
 exemplo:
+
     ```bash
     127.0.0.1		www.seusite.com.br
     ```
@@ -104,6 +105,7 @@ exemplo:
 2.2 Vá em C:\xampp74\apache\conf\extra e modifique o apontamento do host no apache do seu Xampp
 
 exemplo:
+
     ```bash
     <VirtualHost *:80>
     ServerAdmin seuemail@seuemail.com.br
@@ -200,12 +202,55 @@ The proposed project aims to create an administration system for an online store
 
 - Identification of a potential security loophole related to the `get_magic_quotes_gpc()` function, with a suggested solution.
 
+```bash
+public static function stripSlashesIfMagicQuotes($rawData, $overrideStripSlashes = null)
+{
+    $strip = is_null($overrideStripSlashes) ? false : $overrideStripSlashes;
+    if ($strip) {
+        return self::_stripSlashes($rawData);
+    } else {
+        return $rawData;
+    }
+}
+```
+
+
 ## Getting Started
 
 To run the project locally, follow these steps:
 
 1. Clone this repository.
 2. Ensure you have PHP and/or Xampp installed on your machine.
+    example:
+    exemplo:
+
+    ```bash
+    127.0.0.1		www.seusite.com.br
+    ```
+     ```bash
+    <VirtualHost *:80>
+    ServerAdmin seuemail@seuemail.com.br
+    DocumentRoot "C:\xampp74\htdocs\ecommerce"
+    ServerName www.seusite.com.br
+    ErrorLog "logs/dummy-host2.example.com-error.log"
+    CustomLog "logs/dummy-host2.example.com-access.log" common
+	<Directory "C:\xampp74\htdocs\ecommerce">
+        Require all granted
+
+        RewriteEngine On
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteRule ^ index.php [QSA,L]
+	</Directory>
+</VirtualHost>
+```
+
 3. Modify the host settings in the hosts file and Apache configuration file.
 4. Configure the database connection in the Sql class.
 5. Open the term
+
+```bash
+   composer init
+   composer update
+   ```
