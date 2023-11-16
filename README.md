@@ -122,19 +122,16 @@ exemplo:
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteRule ^ index.php [QSA,L]
 	</Directory>
-</VirtualHost>
-
-```
+    </VirtualHost>
+    ```
 
 3. Configure a conexão com o banco na classe Sql.
 
 4. Abra o terminal na pasta raiz do projeto e execute o comando:
 
    ```bash
-
    composer init
    composer update
-
    ```
 
 # E-commerce Project
@@ -225,7 +222,6 @@ To run the project locally, follow these steps:
 1. Clone this repository.
 2. Ensure you have PHP and/or Xampp installed on your machine.
     example:
-    exemplo:
 
     ```bash
     127.0.0.1		www.seusite.com.br
@@ -245,6 +241,7 @@ To run the project locally, follow these steps:
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteRule ^ index.php [QSA,L]
 	</Directory>
+
     ```
 
 3. Modify the host settings in the hosts file and Apache configuration file.
