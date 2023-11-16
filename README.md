@@ -86,6 +86,7 @@ public static function stripSlashesIfMagicQuotes($rawData, $overrideStripSlashes
         return $rawData;
     }
 }
+```
 
 ## Como Iniciar
 
