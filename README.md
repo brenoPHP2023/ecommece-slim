@@ -226,8 +226,7 @@ To run the project locally, follow these steps:
 
     ```bash
     127.0.0.1		www.seusite.com.br
-    ```
-     ```bash
+    
     <VirtualHost *:80>
     ServerAdmin seuemail@seuemail.com.br
     DocumentRoot "C:\xampp74\htdocs\ecommerce"
@@ -243,8 +242,7 @@ To run the project locally, follow these steps:
         RewriteCond %{REQUEST_FILENAME} !-f
         RewriteRule ^ index.php [QSA,L]
 	</Directory>
-</VirtualHost>
-```
+    ```
 
 3. Modify the host settings in the hosts file and Apache configuration file.
 4. Configure the database connection in the Sql class.
