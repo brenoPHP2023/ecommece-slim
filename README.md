@@ -95,6 +95,33 @@ Para executar o projeto localmente, siga estas etapas:
 
 2. Certifique-se de ter o PHP e/ou o Xampp instalado em sua máquina.
 
+2.1 - Vá em C:\Windows\System32\drivers\etc e modifique o host para o endereço do seu projeto
+
+exemplo:
+    ```bash
+    127.0.0.1		www.seusite.com.br
+
+2.2 Vá em C:\xampp74\apache\conf\extra e modifique o apontamento do host no apache do seu Xampp
+
+exemplo:
+    ```bash
+    <VirtualHost *:80>
+    ServerAdmin seuemail@seuemail.com.br
+    DocumentRoot "C:\xampp74\htdocs\ecommerce"
+    ServerName www.seusite.com.br
+    ErrorLog "logs/dummy-host2.example.com-error.log"
+    CustomLog "logs/dummy-host2.example.com-access.log" common
+	<Directory "C:\xampp74\htdocs\ecommerce">
+        Require all granted
+
+        RewriteEngine On
+
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteRule ^ index.php [QSA,L]
+	</Directory>
+</VirtualHost>
+
 3. Configure a conexão com o banco na classe Sql.
 
 4. Abra o terminal na pasta raiz do projeto e execute o comando:
