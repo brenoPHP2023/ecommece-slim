@@ -1,7 +1,5 @@
 # Projeto E-commerce
 
-Projeto desenvolvido do zero no [Curso de PHP 7](https://www.udemy.com/curso-completo-de-php-7/) disponível na plataforma da Udemy e no site do [HTML5dev.com.br](https://www.html5dev.com.br/curso/curso-completo-de-php-7).
-
 Template usado no projeto [Almsaeed Studio](https://almsaeedstudio.com)
 
 ## Visão Geral
@@ -133,3 +131,81 @@ exemplo:
    composer init
    composer update
    ```
+
+# E-commerce Project
+
+Project developed from scratch in the [PHP 7 Course](https://www.udemy.com/curso-completo-de-php-7/) available on Udemy and on the [HTML5dev.com.br](https://www.html5dev.com.br/curso/curso-completo-de-php-7) website.
+
+Template used in the project: [Almsaeed Studio](https://almsaeedstudio.com)
+
+## Overview
+
+The project involves the implementation of an administration system for an online store, focusing on essential functionalities such as authentication, product management, and the purchasing process. Although presented as "high-level," students are encouraged to deepen their understanding of key concepts such as object-oriented programming and the use of PDO as needed.
+
+## Project Description
+
+The proposed project aims to create an administration system for an online store using the PHP programming language. The approach is practical, allowing students to apply the concepts learned during the course in a tangible way. Here are the key aspects of the project:
+
+## Features
+
+### Authentication:
+
+- Implementation of a secure authentication system to ensure restricted access only to authorized users.
+- Utilization of security best practices to protect login information.
+
+### Product CRUD:
+
+- Development of CRUD operations (Create, Read, Update, Delete) for product management.
+- Creation of new products, detailed viewing, editing of existing information, and deletion of products from the database.
+
+### Shopping Cart System:
+
+- Addition of shopping cart functionalities to enable customers to select products for purchase.
+- Dynamic updating of the cart as products are added or removed.
+
+### Purchase Process:
+
+- Implementation of a complete purchase flow, from selecting products to closing the order.
+- Generation of a bank slip as a payment method.
+
+### Security and Best Practices:
+
+- Incorporation of security practices, such as prevention against SQL injection and session handling to ensure a secure user experience.
+- Utilization of object-oriented programming to organize and structure code efficiently and modularly.
+
+### Flexibility for Expansion:
+
+- Encouragement for students to explore and expand the project beyond the provided basics.
+- Possibility of adding new features, creating reports, or improving the administrative interface.
+
+### Continuous Learning:
+
+- Awareness that the project will not cover all details during execution, encouraging students to revisit relevant sections of the course as needed.
+
+### Future Updates:
+
+- Commitment to continue updating the course with new lessons, tips, and information to keep students informed about the latest PHP practices.
+
+## Technologies Used
+
+- **Programming Language:** PHP
+- **Markup/Styling:** HTML/CSS
+- **Client-Side Interactivity:** JavaScript
+- **Database:** MySQL or another Database Management System
+- **Database Interaction:** PDO (PHP Data Objects)
+- **Object-Oriented Programming in PHP:** Extensively used
+- **Security Best Practices:** Implemented, including prevention against SQL injection.
+
+## Important Note
+
+- Identification of a potential security loophole related to the `get_magic_quotes_gpc()` function, with a suggested solution.
+
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1. Clone this repository.
+2. Ensure you have PHP and/or Xampp installed on your machine.
+3. Modify the host settings in the hosts file and Apache configuration file.
+4. Configure the database connection in the Sql class.
+5. Open the term
