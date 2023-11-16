@@ -71,6 +71,24 @@ Boas Práticas de Segurança:
 
 Implementação de práticas de segurança, como preparação de consultas SQL para prevenir injeções de SQL e manipulação segura de sessões para autenticação.
 
+## Observação
+Sucede que por uma brecha de segurança a função get_magic_quotes_gpc() foi depreciada e desconsiderada logo após sair o php 5.4 e pelo que percebi a razão tinha a ver com  problemas relacionados a sql injection.
+
+Provavelmente se a utilizaram aqui de alguma forma a ignoraram no .htacces ou no php.ini com alguma configuração.
+
+Acho que acabo de resolver também este problema pois percebi que a função em si retorna sempre false, e assim sendo fui à pasta HTTP em vendor/slim, editei o ficheiro Util.php e substitui o código da função pelo que apresento de seguida (em vez de usar a função get_magic_quotes_gpc() como lá estava substituí-a pelo valor lógico false)
+
+ ```bash
+public static function stripSlashesIfMagicQuotes($rawData, $overrideStripSlashes = null)
+{
+    $strip = is_null($overrideStripSlashes) ? false : $overrideStripSlashes;
+    if ($strip) {
+        return self::_stripSlashes($rawData);
+    } else {
+        return $rawData;
+    }
+}
+
 ## Como Iniciar
 
 Para executar o projeto localmente, siga estas etapas:
