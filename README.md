@@ -4,8 +4,6 @@ Projeto desenvolvido do zero no [Curso de PHP 7](https://www.udemy.com/curso-com
 
 Template usado no projeto [Almsaeed Studio](https://almsaeedstudio.com)
 
-colocar a observação do link https://www.udemy.com/course/curso-php-7-online/learn/lecture/6809908#questions/14099474 no readme
-
 ## Visão Geral
 
 O projeto consiste na implementação de um sistema de administração para uma loja virtual, com foco em funcionalidades essenciais, como autenticação, gerenciamento de produtos, e processo de compra. Embora o projeto seja apresentado como de "alto nível", os alunos são incentivados a aprofundar seus conhecimentos em conceitos-chave, como orientação a objetos e uso do PDO, conforme necessário.
