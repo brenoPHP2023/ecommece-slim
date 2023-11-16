@@ -107,7 +107,6 @@ exemplo:
 exemplo:
 
     ```bash
-    
     <VirtualHost *:80>
     ServerAdmin seuemail@seuemail.com.br
     DocumentRoot "C:\xampp74\htdocs\ecommerce"
@@ -132,8 +131,10 @@ exemplo:
 4. Abra o terminal na pasta raiz do projeto e execute o comando:
 
    ```bash
+
    composer init
    composer update
+
    ```
 
 # E-commerce Project
