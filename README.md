@@ -98,18 +98,15 @@ Para executar o projeto localmente, siga estas etapas:
 
 exemplo:
 
-    ```bash
     #!/bin/bash
     
     127.0.0.1		www.seusite.com.br
     
-    ```
+    #
 
 2.2 Vá em C:\xampp74\apache\conf\extra e modifique o apontamento do host no apache do seu Xampp
 
 exemplo:
-
-    ```bash
     
     #!/bin/bash
     
@@ -130,7 +127,7 @@ exemplo:
 	</Directory>
     </VirtualHost>
     
-    ```
+    #
 
 3. Configure a conexão com o banco na classe Sql.
 
