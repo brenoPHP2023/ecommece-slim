@@ -99,7 +99,10 @@ Para executar o projeto localmente, siga estas etapas:
 exemplo:
 
     ```bash
+    #!/bin/bash
+    
     127.0.0.1		www.seusite.com.br
+    
     ```
 
 2.2 Vá em C:\xampp74\apache\conf\extra e modifique o apontamento do host no apache do seu Xampp
@@ -107,6 +110,9 @@ exemplo:
 exemplo:
 
     ```bash
+    
+    #!/bin/bash
+    
     <VirtualHost *:80>
     ServerAdmin seuemail@seuemail.com.br
     DocumentRoot "C:\xampp74\htdocs\ecommerce"
@@ -123,6 +129,7 @@ exemplo:
         RewriteRule ^ index.php [QSA,L]
 	</Directory>
     </VirtualHost>
+    
     ```
 
 3. Configure a conexão com o banco na classe Sql.
